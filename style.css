@@ -322,6 +322,17 @@ footer #footer-text {
 		padding: 0px 20px;
 	}
 
+	#portfolio-content ul {
+		margin: 0px 20px;
+	}
+
+	#portfolio-content li {
+		min-width: 200px;
+		padding: 5px;
+		box-shadow: 4px 4px 4px black;
+		margin: 0px auto;
+	}
+
 	footer #footer-container{
 		height: 200px;
 		padding: 20px 0px;
