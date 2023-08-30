@@ -1,0 +1,350 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-family: "Robotto",sans-serif;
+	font-size: 20px;
+	color: black;
+	box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	height: 75px;
+	background-color: #d8c7c7;
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+}
+
+header nav {
+	display: flex;
+	height: 100%;
+	padding: 0px 50px;
+}
+
+#nav-icon {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#nav-content {
+	width: 100%;
+	display: flex;
+}
+
+header ul {
+	display: flex;
+	width: 100%;
+	gap: 50px;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+header li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+header a:hover {
+	color: #4390ef;
+}
+
+/****************************************************************/
+/* 						Content  								*/
+/****************************************************************/
+
+main {
+	margin-top: 50px;
+	max-width: 1440px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#about-container h1 {
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#about-container #about-content {
+	display: flex;
+	gap: 50px;
+}
+
+#about-container #about-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#about-description p {
+	font-size: 22px;
+}
+
+#skill-container h1 {
+	font-size: 36px;
+	text-align: center;
+	margin: 50px 0px;
+}
+
+#skill-content ul {
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+#skill-content li {
+	display: flex;
+	flex-direction: column;
+	margin: 0px auto;
+}
+
+#skill-content #skill-image {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 230px;
+}
+
+#skill-content img {
+	max-width: 200px;
+}
+
+#skill-content span {
+	margin: 20px 0px;
+	text-align: center;
+}
+
+#portfolio-container {
+	margin-bottom: 20px;
+}
+
+#portfolio-container h1 {
+	font-size: 36px;
+	text-align: center;
+	margin: 50px 0px;
+}
+
+#portfolio-content ul {
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+#portfolio-content li {
+	min-width: 412px;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	box-shadow: 4px 4px 4px black;
+	margin: 0px auto;
+}
+
+#portfolio-content #portfolio-image {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#portfolio-content img {
+	max-width: 400px;
+	height: 243px;
+}
+
+#portfolio-content {
+	position: relative;
+}
+#portfolio-content #portfolio-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#portfolio-content span {
+	display: flex;
+	margin: 15px 0px 10px 0px;
+	justify-content: center;
+}
+
+footer {
+	min-height: 100px;
+	background-color: #d8c7c7;
+}
+
+footer #footer-container {
+	height: 100px;
+	max-width: 1440px;
+	margin: 0px auto;
+}
+
+#footer-container ul {
+	height: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+#footer-container li {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+footer #footer-text {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#footer-container a:hover {
+	color: #4390ef;
+}
+
+#modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#modal-container {
+	border-radius: 10px;
+	padding: 20px;
+	background: #fff;
+	max-width: 90vw;
+	max-height: 90vh;
+}
+
+#modal-container .button-close {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#modal-container .js-modal-close {
+	background: none;
+	border: none;
+}
+
+#modal-container .modal-content {
+	display: flex;
+	gap: 20px;
+}
+
+#modal-container img {
+	width: 700px;
+	object-fit: contain;
+	max-height: 500px;
+	border: 1px solid #000;
+}
+
+#modal-container .modal-carousel {
+	position: relative;
+	min-width: 700px;
+}
+
+#modal-container .button-next {
+	position: absolute;
+	right: 1%;
+	top: 47%;
+}
+#modal-container .js-carousel-next {
+	font-size: 32px;
+	background: none;
+	border: none;
+}
+
+#modal-container .button-previous {
+	position: absolute;
+	left: 1%;
+	top: 47%;
+}
+#modal-container .js-carousel-previous {
+	font-size: 32px;
+	background: none;
+	border: none;
+}
+.modal-infos p {
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 1080px){
+	header nav {
+		padding: 0;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	header #nav-icon {
+		width: 100%;
+	}
+
+	header #nav-icon span{
+		text-align: center;
+	}
+
+	header ul {
+		justify-content: center;
+	}
+
+	header li {
+		width: 100%;
+	}
+
+	header a {
+		text-align: center;
+	}
+
+	#about-content {
+		flex-direction: column;
+	}
+
+	#about-image {
+		display: flex;
+		justify-content: center;
+	}
+
+	#about-image img {
+		max-width: 80vw;
+	}
+
+	#about-description {
+		padding: 0px 20px;
+	}
+
+	footer #footer-container{
+		height: 200px;
+		padding: 20px 0px;
+	}
+
+	#footer-container ul {
+		flex-direction: column;
+	}
+
+	#modal-container .modal-content {
+		flex-direction: column;
+	}
+
+	#modal-container {
+		overflow-y: scroll;
+	}
+
+	#modal-container img {
+		max-width: 80vw;
+	}
+
+	#modal-container .modal-carousel {
+		min-width: 80vw;
+		max-width: 80vw;
+	}
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Younes Charguioui - Développeur Web</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div id="nav-icon">
+				<span>Younes CHARGUIOUI</span>
+			</div>
+			<div id="nav-content">
+				<ul>
+					<li>
+						<a href="#">à propos</a>	
+					</li>
+					<li>
+						<a href="#">mes projets</a>	
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section id="about-container">
+			<h1>A propos de moi</h1>
+			<div id="about-content">
+				<div id="about-image">
+					<img src="./images/about.jpg" alt="Un ordinateur" />
+				</div>
+				<div id="about-description">
+					<p>Je tiens à vous remercier de venir à ma rencontre sur mon site Web.<br><br>
+					Je suis un développeur Web encore junior pour le moment.. en pleine réalisation de ses premiers chef d'oeuvre.<br>
+					Fraichement diplomé d'un BAC+2 en développement web, c'est avec la tête pleins d'idées et de compétences que je propose mes services auprès d'entreprises, auto-entreprenneurs, particuliers, etc afin de réaliser leur site de présentation, leur outil de travail ou plus généralement leur projet en réalisant leur solution répondant à leur problématique.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="skill-container">
+			<h1>Mes compétences</h1>
+			<div id="skill-content">
+				<ul>
+					<li>
+						<div id="skill-image">
+							<img src="./images/html.svg"/>
+						</div>
+						<span>HTML</span>
+					</li>
+					<li>
+						<div id="skill-image">
+							<img src="./images/css.svg"/>
+						</div>
+						<span>Css</span>
+					</li>
+					<li>
+						<div id="skill-image">
+							<img src="./images/js.svg"/>
+						</div>
+						<span>JavaScript</span>
+					</li>
+					<li>
+						<div id="skill-image">
+							<img src="./images/react.svg"/>
+						</div>
+						<span>React</span>
+					</li>
+					<li>
+						<div id="skill-image">
+							<img src="./images/nodejs.svg"/>
+						</div>
+						<span>Node.Js</span>
+					</li>
+					<li>
+						<div id="skill-image">
+							<img src="./images/mongodb.svg"/>
+						</div>
+						<span>MongoDB</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="portfolio-container">
+			<h1>Mon portfolio</h1>
+			<div id="portfolio-content">
+				<ul>
+					<li class="js-modal" name="booki">
+						<div id="portfolio-image">
+							<img src="./images/booki/accueil.png"/>
+						</div>
+						<div id="portfolio-text">
+							<span>Booki - site d'hébergement</span>
+						</div>
+					</li>
+					<li class="js-modal" name="bruel">
+						<div id="portfolio-image">
+							<img src="./images/sophie-bruel/accueil.png"/>
+						</div>
+						<div id="portfolio-text">
+							<span>Sophie BRUEL - architecte</span>
+						</div>	
+					</li>
+					<li class="js-modal" name="carducci">
+						<div id="portfolio-image">
+							<img src="./images/nina-carducci/accueil.png"/>
+						</div>
+						<div id="portfolio-text">
+							<span>Nina CARDUCCI - photographe</span>
+						</div>
+					</li>
+					<li class="js-modal" name="kasa">
+						<div id="portfolio-image">
+							<img src="./images/kasa/accueil.png"/>
+						</div>
+						<div id="portfolio-text">
+							<span>KasaApp - site d'hébergement</span>
+						</div>
+					</li>
+					<li class="js-modal" name="menumaker">
+						<div id="portfolio-image">
+							<img src="./images/menumaker/spec-technique.png"/>
+						</div>
+						<div id="portfolio-text">
+							<span>Gestion de projet - MenuMaker</span>
+						</div>
+					</li>
+					<li class="js-modal" name="grimmoir">
+						<div id="portfolio-image">
+							<img src="./images/grimmoir/getall.png"/>
+						</div>
+						<div id="portfolio-text">
+							<span>[API REST] Mon Vieux Grimmoir</span>
+						</div>
+					</li>
+				</ul>
+		</section>
+		<aside id="modal" aria-hidden="true" role="dialog" aria-labelledby="Un projet" style="display: none;">
+			<div id="modal-container" class="js-modal-stop">
+				<div class="button-close">
+					<button class="js-modal-close">X</button>
+				</div>
+				<div class="modal-content">
+					<div class="modal-carousel">
+						<img id="js-portfolio-image" src="./images/grimmoir/getall.png"/>
+						<div class="button-next">
+							<button class="js-carousel-next">&#9658;</button>
+						</div>
+						<div class="button-previous">
+							<button class="js-carousel-previous">&#9668;</button>
+						</div>
+					</div>
+					<div class="modal-infos">
+						<h2>Technologie(s)</h2>
+						<p id="infos-techno">- React<br>- Git<br>- Sass</p>
+						<h2>Description</h2>
+						<p id="infos-description">Conception d'un site d'un photographe a a a a a a a a a a a a a  a a a a a a a a a a a a a a a a a a a a a a a a a a</p>
+						
+					</div>
+					
+				</div>
+				
+				
+			</div>
+		</aside>
+	</main>
+	<footer>
+		<div id="footer-container">
+			<ul>
+				<li>
+					<div id="footer-text">
+						<span>Email: younes.charguioui@gmail.com</span>
+					</div>
+					
+				</li>
+				<li>
+					<div id="footer-text">
+						<a href="https://www.linkedin.com/in/younes-charguioui/" target="_blank">LinkedIn</a>
+					</div>
+				</li>
+				<li>
+					<div id="footer-text">
+						<a href="https://github.com/Younes-Charguioui" target="_blank">GitHub</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</footer>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
