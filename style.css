@@ -278,6 +278,13 @@ footer #footer-text {
 	margin-bottom: 20px;
 }
 
+.modal-infos a {
+	text-decoration: underline;
+}
+.modal-infos a:hover {
+	color: #4390ef;
+}
+
 @media (max-width: 1080px){
 	header nav {
 		padding: 0;
